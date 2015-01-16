@@ -1,0 +1,63 @@
+@import 'bourbon/bourbon';
+$visual-grid: false;
+/* \\$gutter: golden-ratio(1em, 1); */
+@import 'neat/neat';
+
+
+body {
+  background: rgb(0, 194, 129);
+  color: rgb(255, 255, 255);
+  font-family: arial;
+
+
+}
+
+.border{
+border: 1px #fff dashed;
+width: 500px;
+
+}
+
+
+select,
+input,
+textarea {
+  @include appearance(none);
+  background-color: transparent;
+  border: 1px solid #fff;
+  font-size: 24px;
+  color: white;
+  margin: 10px;
+
+}
+
+button {
+  @include appearance(none);
+  background-color: transparent;
+  border: 1px solid #fff;
+  width: 100px;
+  height: 50px;
+  font-size: 16px;
+  margin:10px;
+  color:white;
+
+}
+
+
+
+p{
+  font-size:24px;
+  border-bottom: 1px solid #fff;
+  width: 500px;
+  margin-top: 100px;
+
+}
+
+a{
+  color:white;  
+}
+
+.clear{
+  color:white;
+  font-family: arial;
+}
