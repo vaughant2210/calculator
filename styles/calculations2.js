@@ -1,3 +1,4 @@
+
 function eraseText() {
   document.getElementById("display").innerHTML = "";
   document.getElementById("a").value = "";
@@ -19,9 +20,9 @@ document.getElementById("plus").addEventListener("click", arg_a );
 function arg_a(event){
 
   var inputa = document.getElementById('a').value;
-  var inputb = document.getElementById('b').value;
 
-  if (inputa && inputb){
+
+  if (inputa){
     var c = (+inputa + +inputb);
     var result= numberWithCommas(c);
     document.getElementById("display").innerHTML = result;
@@ -61,10 +62,10 @@ function arg_m(event){
 
   if (inputa && inputb){
 
-  var c = (+inputa * +inputb);
-  var result= numberWithCommas(c);
-  document.getElementById("display").innerHTML = result;
-  event.preventDefault();
+    var c = (+inputa * +inputb);
+    var result= numberWithCommas(c);
+    document.getElementById("display").innerHTML = result;
+    event.preventDefault();
 
   } else {
     document.getElementById("display").innerHTML = "Arg! Need a few blocks to build!";
@@ -81,13 +82,13 @@ function arg_d(event){
 
   if (inputa && inputb){
 
-  var c = (+inputa / +inputb);
-  var result= numberWithCommas(c);
-  document.getElementById("display").innerHTML = result;
-  event.preventDefault();
+    var c = (+inputa / +inputb);
+    var result= numberWithCommas(c);
+    document.getElementById("display").innerHTML = result;
+    event.preventDefault();
 
   } else {
-  document.getElementById("display").innerHTML = "Arg! Need a few blocks to build!";
+    document.getElementById("display").innerHTML = "Arg! Need a few blocks to build!";
   }
 
 }
